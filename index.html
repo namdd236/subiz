@@ -16,6 +16,8 @@
     <title>Subiz</title>
     <link rel="stylesheet" href="style.css" />
     <script language="javascript" src="/function.js"></script>
+    <!-- <script src=”https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js”> </script> -->
+    <script src="lodash.js"></script>
   </head>
 
   <body>
@@ -201,47 +203,58 @@
     <div class="options_container">
       <div class="options">
         <div class="img_options">
-          <div class="background_icon" id="interative">
+          <div class="background_icon interative_back" id="interative">
             <img
+              id="img_interative_active"
               src="./assets/img/interative_icon_active.png"
-              class="img_option_item"
+              class="img_option_item_active active"
+            />
+            <img
+              id="img_interative_inactive"
+              src="./assets/img/interative_icon.png"
+              class="img_option_item_inactive inactive"
             />
           </div>
-          <div class="background_icon" style="background: #ffa412" id="promote">
+          <div class="background_icon" id="promote">
             <img
+              id="img_promote_active"
               src="./assets/img/promote_icon_active.png"
-              class="img_option_item"
+              class="img_option_item_active inactive"
+            />
+            <img
+              id="img_promote_inactive"
+              src="./assets/img/promote_icon.png"
+              class="img_option_item_inactive active"
             />
           </div>
-          <div
-            class="background_icon"
-            style="background: #0068fe"
-            id="potential"
-          >
+          <div class="background_icon" id="potential">
             <img
+              id="img_potential_active"
               src="./assets/img/potential_icon_active.png"
-              class="img_option_item"
+              class="img_option_item_active inactive"
+            />
+            <img
+              id="img_potential_inactive"
+              src="./assets/img/potential_icon.png"
+              class="img_option_item_inactive active"
             />
           </div>
-          <div class="background_icon" style="background: #ff3647" id="manage">
+          <div class="background_icon" id="manage">
             <img
+              id="img_manage_active"
               src="./assets/img/manage_icon_active.png"
-              class="img_option_item"
+              class="img_option_item_active inactive"
+            />
+            <img
+              id="img_manage_inactive"
+              src="./assets/img/manage_icon.png"
+              class="img_option_item_inactive active"
             />
           </div>
         </div>
         <div class="options_content">
           <p class="header_option_item">Tương tác với khách hàng</p>
-          <p class="text_option_item"
-            style="
-              font-family: unset;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 20px;
-              line-height: 24px;
-              color: #000000;
-            "
-          >
+          <p class="text_option_item">
             Tương tác với khách hàng trên nhiều kênh ngay trên một nền tảng
             Website, Tổng đài, Mạng xã hội,...
           </p>
@@ -271,30 +284,26 @@
         </div>
       </div>
       <div>
-        <img class="img_big_option_item" src="./assets/img/interative_img.png" />
+        <img
+          class="img_big_option_item"
+          src="./assets/img/interative_img.png"
+        />
       </div>
     </div>
-    <div style="position: relative; width: 100%; margin-top: 100px">
-      <img src="./assets/img/background_solution.png" style="width: 100%" />
-      <p
-        style="
-          width: 1100px;
-          position: absolute;
-          top: 85px;
-          left: 50%;
-          transform: translate(-50%, 0%);
-          font-family: unset;
-          font-style: normal;
-          font-weight: 700;
-          font-size: 48px;
-          line-height: 58px;
-          text-align: center;
-          text-transform: uppercase;
-        "
-      >
+    <div style="position: relative; width: 100%" class="section_solution">
+      <img src="./assets/img/background_mxh.png" style="width: 100%" />
+      <p class="header_solution" style="color: #3d73d9">
         Giải pháp quản lý tập trung nhiều kênh tương tác khách hàng
       </p>
-      
+      <div>
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets/img/solution_mobile.png"
+          />
+          <img class="solution" src="./assets/img/img_mxh.png" />
+        </picture>
+      </div>
     </div>
     <div
       style="
@@ -312,48 +321,16 @@
           align-items: center;
         "
       >
-        <p
-          style="
-            width: 1100px;
-            font-family: unset;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 58px;
-            text-align: center;
-            text-transform: uppercase;
-          "
-        >
-          TỰ ĐỘNG HÓA
-        </p>
-        <p
-          style="
-            width: 1065px;
-            ont-style: normal;
-            font-weight: 400;
-            font-size: 24.9461px;
-            line-height: 37px;
-            color: #6e6e73;
-            text-align: center;
-            margin-top: 15px;
-          "
-        >
+        <p class="header_automatic">TỰ ĐỘNG HÓA</p>
+        <p class="text_desc header">
           Tự dộng vận hành và thiết lập nhiều chiến dịch tương tác khách hàng tự
           động dựa trên hành vi cụ thể. Tăng trải nghiệm và dễ dàng thuyết phục
           khách hàng
         </p>
       </div>
-      <div
-        style="
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          width: 75%;
-          margin: auto;
-        "
-      >
+      <div class="auto_item">
         <div>
-          <img src="./assets/img/auto_bot_img.png" style="height: 100%" />
+          <img src="./assets/img/auto_bot_img.png" class="auto_img" />
         </div>
         <div
           style="
@@ -363,71 +340,18 @@
             align-items: center;
           "
         >
-          <div
-            style="
-              width: 535px;
-              font-style: normal;
-              font-weight: 700;
-              font-size: 45px;
-              line-height: 54px;
-            "
-          >
-            Chatbot tự động
-          </div>
-          <div
-            style="
-              width: 535px;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 24.9461px;
-              line-height: 29px;
-              color: #6e6e73;
-            "
-          >
+          <div class="auto_text">Chatbot tự động</div>
+          <div class="text_desc" style="margin-bottom: 15px">
             Chủ động chào hỏi mỗi khi khách hàng truy cập, trả lời các cuộc trò
             chuyện từ một màn hình, bất cứ nơi nào khách hàng của bạn nhắn tin
             cho bạn. Thu thập thông tin và chuyển đúng đến nhóm phụ trách.
           </div>
         </div>
       </div>
-      <div
-        style="
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          width: 75%;
-          margin: auto;
-        "
-      >
-        <div
-          style="
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          "
-        >
-          <div
-            style="
-              width: 535px;
-              font-style: normal;
-              font-weight: 700;
-              font-size: 45px;
-              line-height: 54px;
-            "
-          >
-            Tự động phân công việc
-          </div>
-          <div
-            style="
-              width: 535px;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 24.9461px;
-              line-height: 29px;
-              color: #6e6e73;
-            "
-          >
+      <div class="auto_item">
+        <div class="mid_item">
+          <div class="auto_text">Tự động phân công việc</div>
+          <div class="text_desc">
             Phân phối các cuộc hội thoại đến đúng tư vấn viên, hỗ trợ khách hàng
             nhanh chóng, tương tác chuyên nghiệp với những mẫu tin nhắn có sẵn,
             emoji, hình ảnh,... giúp dễ dàng chuyển đổi và xây dựng mối quan hệ
@@ -435,20 +359,21 @@
           </div>
         </div>
         <div>
-          <img src="./assets/img/auto_assign_img.png" style="height: 100%" />
+          <img src="./assets/img/auto_assign_img.png" class="auto_img" />
+        </div>
+        <div class="bottom_item">
+          <div class="auto_text">Tự động phân công việc</div>
+          <div class="text_desc" style="margin-bottom: 15px">
+            Phân phối các cuộc hội thoại đến đúng tư vấn viên, hỗ trợ khách hàng
+            nhanh chóng, tương tác chuyên nghiệp với những mẫu tin nhắn có sẵn,
+            emoji, hình ảnh,... giúp dễ dàng chuyển đổi và xây dựng mối quan hệ
+            tốt đẹp với khách hàng
+          </div>
         </div>
       </div>
-      <div
-        style="
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          width: 75%;
-          margin: auto;
-        "
-      >
+      <div class="auto_item">
         <div>
-          <img src="./assets/img/auto_reply_img.png" style="height: 100%" />
+          <img src="./assets/img/auto_reply_img.png" class="auto_img" />
         </div>
         <div
           style="
@@ -458,27 +383,8 @@
             align-items: center;
           "
         >
-          <div
-            style="
-              width: 535px;
-              font-style: normal;
-              font-weight: 700;
-              font-size: 45px;
-              line-height: 54px;
-            "
-          >
-            Tự động phản hồi khách hàng
-          </div>
-          <div
-            style="
-              width: 535px;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 24.9461px;
-              line-height: 29px;
-              color: #6e6e73;
-            "
-          >
+          <div class="auto_text">Tự động phản hồi khách hàng</div>
+          <div class="text_desc" style="margin-bottom: 15px">
             Tự động hóa các tương tác, phản hồi khách hàng trên trang Mạng xã
             hội dựa trên hành vi khách hàng, tăng sự hài lòng, trải nghiệm tốt
             và dễ dàng thuyết phục khách hàng sử dụng sản phẩm/dịch vụ
@@ -486,9 +392,7 @@
         </div>
       </div>
     </div>
-    <div
-      style="width: 100%; background: #f7faff; margin-top: 3%; padding: 10px"
-    >
+    <div class="background_tool">
       <div
         style="
           display: flex;
@@ -498,30 +402,9 @@
           margin-top: 75px;
         "
       >
-        <p
-          style="
-            width: 1100px;
-            font-family: unset;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 58px;
-            text-align: center;
-            text-transform: uppercase;
-          "
-        >
-          CÔNG CỤ HỖ TRỢ
-        </p>
+        <p class="header_automatic">CÔNG CỤ HỖ TRỢ</p>
       </div>
-      <div
-        style="
-          width: 75%;
-          margin: auto;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-        "
-      >
+      <div class="flex_img_row">
         <div style="display: flex; justify-content: space-between">
           <img
             src="./assets/img/manage_group_img.png"
@@ -551,6 +434,38 @@
           />
         </div>
       </div>
+      <div class="flex_img_column">
+        <div style="display: flex; justify-content: space-between">
+          <img
+            src="./assets/img/manage_group_img.png"
+            style="margin-bottom: 15px; max-width: 150px; height: auto"
+          />
+          <img
+            src="./assets/img/manage_order_img.png"
+            style="margin-bottom: 15px; max-width: 150px; height: auto"
+          />
+        </div>
+        <div style="display: flex; justify-content: space-between">
+          <img
+            src="./assets/img/marketing_tool_img.png"
+            style="margin-bottom: 15px; max-width: 150px; height: auto"
+          />
+          <img
+            src="./assets/img/manage_product_img.png"
+            style="margin-bottom: 15px; max-width: 150px; height: auto"
+          />
+        </div>
+        <div style="display: flex; justify-content: space-between">
+          <img
+            src="./assets/img/subiz_live_img.png"
+            style="margin-bottom: 15px; max-width: 150px; height: auto"
+          />
+          <img
+            src="./assets/img/crm_customer_img.png"
+            style="margin-bottom: 15px; max-width: 150px; height: auto"
+          />
+        </div>
+      </div>
     </div>
     <div style="width: 100%; margin-top: 70px">
       <div
@@ -561,45 +476,10 @@
           align-items: center;
         "
       >
-        <p
-          style="
-            width: 1100px;
-            font-family: unset;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 58px;
-            text-align: center;
-            text-transform: uppercase;
-          "
-        >
-          Khách hàng
-        </p>
-        <p
-          style="
-            width: 1065px;
-            ont-style: normal;
-            font-weight: 400;
-            font-size: 24.9461px;
-            line-height: 37px;
-            color: #6e6e73;
-            text-align: center;
-            margin-top: 15px;
-          "
-        >
-          Hơn 20.000+ doanh nghiệp đã tin dùng Subiz
-        </p>
+        <p class="header_automatic">Khách hàng</p>
+        <p class="text_desc">Hơn 20.000+ doanh nghiệp đã tin dùng Subiz</p>
       </div>
-      <div
-        style="
-          width: 75%;
-          height: 445px;
-          display: flex;
-          flex-direction: column;
-          justify-content: space-evenly;
-          margin: auto;
-        "
-      >
+      <div class="img_customer_row">
         <div style="display: flex; justify-content: space-between">
           <img src="./assets/img/logo_mywork.png" class="customer" />
           <img src="./assets/img/logo_vingroup.png" class="customer" />
@@ -613,18 +493,19 @@
           <img src="./assets/img/logo_ncb.png" class="customer" />
         </div>
       </div>
+      <div class="img_customer_column">
+        <div style="display: flex; justify-content: space-between">
+          <img src="./assets/img/logo_mywork.png" class="customer" />
+          <img src="./assets/img/logo_vingroup.png" class="customer" />
+        </div>
+        <div style="display: flex; justify-content: space-between">
+          <img src="./assets/img/logo_pnj.png" class="customer" />
+          <img src="./assets/img/logo_fpt.png" class="customer" />
+        </div>
+      </div>
     </div>
     <div style="background: #f7faff">
-      <div
-        style="
-          display: flex;
-          align-items: center;
-          width: 75%;
-          height: 260px;
-          margin: auto;
-          justify-content: space-between;
-        "
-      >
+      <div class="advise_">
         <div
           style="
             display: flex;
@@ -633,87 +514,27 @@
             justify-content: center;
           "
         >
-          <p
-            style="
-              width: 620px;
-              font-style: normal;
-              font-weight: 700;
-              font-size: 45.5202px;
-              line-height: 55px;
-              color: #0047cc;
-            "
-          >
-            ĐĂNG KÝ TƯ VẤN
-          </p>
-          <p
-            style="
-              width: 620px;
-              font-style: normal;
-              font-weight: 400;
-              font-size: 22.711px;
-              line-height: 34px;
-              color: #1d1d1f;
-            "
-          >
+          <p class="text_register_advise">ĐĂNG KÝ TƯ VẤN</p>
+          <p class="text_desc_advise">
             Vui lòng để lại thông tin để chúng tôi có thể tư vấn rõ hơn
           </p>
         </div>
-        <div>
+        <div style="display: flex; flex-direction: row">
           <input placeholder="name@company.com" class="input_style" />
-          <button
-            style="
-              background: linear-gradient(
-                95.98deg,
-                #eeb425 0.72%,
-                #fa614e 100%
-              );
-              border-radius: 0px 5px 4px 0px;
-              border: none;
-              width: 200px;
-              height: 70px;
-            "
-          >
+          <button class="input_button">
             <a
               href="https://app.subiz.com.vn/register?email=nam%40gmail.com"
               target="_blank"
               style="text-decoration: none"
             >
-              <p
-                style="
-                  font-style: normal;
-                  font-weight: 700;
-                  font-size: 25px;
-                  line-height: 30px;
-                  color: #ffffff;
-                "
-              >
-                Đăng ký
-              </p>
+              <p class="text_button">Đăng ký</p>
             </a>
           </button>
         </div>
       </div>
     </div>
-    <div
-      style="
-        width: 100%;
-        height: 657px;
-        background: #212326;
-        display: flex;
-        flex-direction: column;
-      "
-    >
-      <div
-        style="
-          display: flex;
-          flex-direction: row;
-          width: 75%;
-          /* justify-content: space-evenly; */
-          margin: auto;
-          height: 520px;
-          border-bottom: 1px solid grey;
-        "
-      >
+    <div class="footer_option">
+      <div class="footer_1">
         <div
           style="
             flex: 2;
@@ -932,17 +753,29 @@
           </div>
         </div>
       </div>
-      <div
-        style="
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          height: 100%;
-          width: 75%;
-          margin: auto;
-        "
-      >
+      <div class="footer_2">
+        <div class="item_footer_1">
+          <p
+            style="
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              line-height: 25px;
+              color: #ffffff;
+            "
+          >
+            CÔNG TY CỔ PHẦN GIẢI PHÁP TRỰC TUYẾN VIETNAMBIZ
+          </p>
+          <div class="more_footer_1">
+            <p class="footer_text">Giới thiệu</p>
+            <p class="footer_text">Tuyển dụng</p>
+            <p class="footer_text">Hóa đơn điện tử</p>
+            <p class="footer_text">Chính sách bảo mật</p>
+            <p class="footer_text">Điều khoản dịch vụ</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer_3">
         <img src="./assets/img/logo-subiz.png" />
         <div
           style="
@@ -981,4 +814,131 @@
       </div>
     </div>
   </body>
+  <script>
+    var interative = document.getElementById("interative");
+    var promote = document.getElementById("promote");
+    var potential = document.getElementById("potential");
+    var manage = document.getElementById("manage");
+
+    var option = [{ id: "interative", background: "" }];
+
+    var status_option = "interative";
+    var text_option = `<p class="header_option_item">Tương tác với khách hàng</p>
+          <p class="text_option_item">
+            Tương tác với khách hàng trên nhiều kênh ngay trên một nền tảng
+            Website, Tổng đài, Mạng xã hội,...
+          </p>`;
+
+    var img_option = `<img
+          class="img_big_option_item"
+          src="./assets/img/interative_img.png"
+        />`;
+
+    function changeStatusOption(option) {
+      status_option = option;
+      if (option === "interative") {
+        text_option = `<p class="header_option_item">Tương tác với khách hàng</p>
+          <p class="text_option_item">
+            Tương tác với khách hàng trên nhiều kênh ngay trên một nền tảng
+            Website, Tổng đài, Mạng xã hội,...
+          </p>`;
+        img_option = `<img
+          class="img_big_option_item"
+          src="./assets/img/interative_img.png"
+        />`;
+      }
+
+      if (option === "promote") {
+        text_option = `<p class="header_option_item">Thúc đẩy bán hàng</p>
+          <p class="text_option_item">
+            Chủ động chào hỏi khách hàng truy cập. Cá nhân hoá cuộc trò chuyện, tạo lòng tin cho khách hàng
+          </p>`;
+        img_option = `<img
+          class="img_big_option_item"
+          src="./assets/img/promote_img.png"
+        />`;
+      }
+
+      if (option === "potential") {
+        text_option = `<p class="header_option_item">Chuyển đổi khách hàng tiềm năng</p>
+          <p class="text_option_item">
+            Kết hợp tư vấn bán hàng qua tin nhắn, đồng thời nghe - gọi điện chăm sóc, chuyển đổi khách hàng tiềm năng thành khách mua hàng
+          </p>`;
+        img_option = `<img
+          class="img_big_option_item"
+          src="./assets/img/interative_img.png"
+        />`;
+      }
+
+      if (option === "manage") {
+        text_option = `<p class="header_option_item">Quản trị khách hàng</p>
+          <p class="text_option_item">
+            Thu thập dữ liệu thông tin khách hàng: Đến từ kênh nào, sử dụng thiết bị gì, email, số điện thoại, ...
+          </p>`;
+        img_option = `<img
+          class="img_big_option_item"
+          src="./assets/img/interative_img.png"
+        />`;
+      }
+
+      if (document.getElementById(option).className === "background_icon") {
+        document.getElementById(`${option}`).classList.add(`${option}_back`);
+        document
+          .getElementById(`img_${option}_active`)
+          .classList.remove("inactive");
+        document.getElementById(`img_${option}_active`).classList.add("active");
+        document
+          .getElementById(`img_${option}_inactive`)
+          .classList.remove("active");
+        document
+          .getElementById(`img_${option}_inactive`)
+          .classList.add("inactive");
+      } else {
+        document.getElementById(`${option}`).classList.remove(`${option}_back`);
+        document
+          .getElementById(`img_${option}_active`)
+          .classList.remove("active");
+        document
+          .getElementById(`img_${option}_active`)
+          .classList.add("inactive");
+        document
+          .getElementById(`img_${option}_inactive`)
+          .classList.remove("inactive");
+        document
+          .getElementById(`img_${option}_inactive`)
+          .classList.add("active");
+      }
+
+      // document.getElementsByClassName("header_option_item")[0].remove();
+      // document.getElementsByClassName('options_content').removeChild(document.getElementsByClassName('header_option_item')[0])
+      // document.getElementsByClassName('options_content').removeChild(document.getElementsByClassName('text_option_item')[0])
+      document.getElementsByClassName("options_content").innerHTML =
+        text_option;
+      return;
+    }
+
+    this.interative.addEventListener("click", function () {
+      changeStatusOption(status_option);
+      changeStatusOption("interative");
+    });
+    this.promote.addEventListener("click", function () {
+      changeStatusOption(status_option);
+      changeStatusOption("promote");
+    });
+    this.potential.addEventListener("click", function () {
+      changeStatusOption(status_option);
+      changeStatusOption("potential");
+    });
+    this.manage.addEventListener("click", function () {
+      changeStatusOption(status_option);
+      changeStatusOption("manage");
+    });
+
+    function moreInfo() {}
+    var item_footer_1 = document.getElementsByClassName("item_footer_1");
+    var more_footer_1 = document.getElementsByClassName("more_footer_1");
+    this.item_footer_1.addEventListener("click", function () {
+      more_footer_1.classList.add("more_footer");
+    });
+  </script>
 </html>
