@@ -230,7 +230,7 @@ ul.dropdown_menu > li:hover > a {
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
-  line-height: 30px;
+  line-height: 36px;
   color: #6e6e73;
 }
 
@@ -326,6 +326,7 @@ ul.dropdown_menu > li:hover > a {
   font-size: 25px;
   line-height: 30px;
   color: #000000;
+  margin-bottom: 30px;
 }
 
 .text_option_item {
@@ -385,6 +386,8 @@ ul.dropdown_menu > li:hover > a {
   text-align: center;
   text-transform: uppercase;
   color: #3d73d9;
+  margin-bottom: 25px;
+  margin-top: 30px;
 }
 
 .auto_img {
@@ -406,6 +409,7 @@ ul.dropdown_menu > li:hover > a {
   font-weight: 700;
   font-size: 45px;
   line-height: 54px;
+  margin-bottom: 30px;
 }
 
 .header {
@@ -612,6 +616,7 @@ ul.dropdown_menu > li:hover > a {
     padding-top: 15px;
     justify-content: space-evenly;
     align-items: center;
+    width: 100%;
   }
 
   .options_container {
@@ -620,7 +625,7 @@ ul.dropdown_menu > li:hover > a {
   }
 
   .img_options {
-    width: 375px;
+    width: 100%;
     justify-content: space-evenly;
   }
 
@@ -674,6 +679,9 @@ ul.dropdown_menu > li:hover > a {
 
   .header_automatic {
     font-size: 22px;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .auto_img {
@@ -689,6 +697,7 @@ ul.dropdown_menu > li:hover > a {
     width: 350px;
     font-size: 20px;
     text-align: center;
+    margin-bottom: 10px;
   }
 
   .mid_item {
