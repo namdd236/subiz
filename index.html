@@ -37,7 +37,7 @@
             <picture>
               <source
                 media="(max-width: 768px)"
-                srcset="./assets/img/logo-subiz_smallest.png"
+                srcset="./assets/img/logo-subiz-smallest.png"
               />
               <img src="./assets/img/logo-subiz.png" />
             </picture>
@@ -179,7 +179,7 @@
                 Đồng hành cùng doanh nghiệp trên hành trình chinh phục khách
                 hàng, phủ sóng thương hiêu, thúc đẩy doanh số vượt bậc!
               </p>
-              <button class="register_now_button">
+              <button class="register_now_button" style="cursor: pointer;">
                 <a href="https://app.subiz.com.vn/register" class="text_button">
                   Đăng ký ngay
                 </a>
@@ -566,12 +566,16 @@
           </p>
         </div>
         <div style="display: flex; flex-direction: row">
-          <input placeholder="name@company.com" class="input_style" />
+          <input
+            placeholder="name@company.com"
+            class="input_style"
+            id="input"
+          />
           <button class="input_button">
             <a
-              href="https://app.subiz.com.vn/register?email=nam%40gmail.com"
               target="_blank"
               style="text-decoration: none"
+              id="submit_btn"
             >
               <p class="text_button">Đăng ký</p>
             </a>
@@ -944,5 +948,11 @@
     // this.item_footer_1.addEventListener("click", function () {
     //   more_footer_1.classList.add("more_footer");
     // });
+    var submit = document.getElementById("submit_btn");
+    
+    submit.addEventListener("click", function () {
+      var value = document.getElementById("input").value;
+      window.location=`https://app.subiz.com.vn/register?email=${value}`
+    });
   </script>
 </html>
