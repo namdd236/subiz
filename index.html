@@ -252,11 +252,32 @@
             />
           </div>
         </div>
-        <div class="options_content">
+        <div class="options_content active" id="text_interative">
           <p class="header_option_item">Tương tác với khách hàng</p>
           <p class="text_option_item">
             Tương tác với khách hàng trên nhiều kênh ngay trên một nền tảng
             Website, Tổng đài, Mạng xã hội,...
+          </p>
+        </div>
+        <div class="options_content inactive" id="text_promote">
+          <p class="header_option_item">Thúc đẩy bán hàng</p>
+          <p class="text_option_item">
+            Chủ động chào hỏi khách hàng truy cập. Cá nhân hoá cuộc trò chuyện,
+            tạo lòng tin cho khách hàng
+          </p>
+        </div>
+        <div class="options_content inactive" id="text_potential">
+          <p class="header_option_item">Chuyển đổi khách hàng tiềm năng</p>
+          <p class="text_option_item">
+            Kết hợp tư vấn bán hàng qua tin nhắn, đồng thời nghe - gọi điện chăm
+            sóc, chuyển đổi khách hàng tiềm năng thành khách mua hàng
+          </p>
+        </div>
+        <div class="options_content inactive" id="text_manage">
+          <p class="header_option_item">Quản trị khách hàng</p>
+          <p class="text_option_item">
+            Thu thập dữ liệu thông tin khách hàng: Đến từ kênh nào, sử dụng
+            thiết bị gì, email, số điện thoại, ...
           </p>
         </div>
         <div
@@ -283,11 +304,31 @@
           <img src="./assets/img/arrow_left.png" style="width: 41px" />
         </div>
       </div>
-      <div>
-        <img
-          class="img_big_option_item"
-          src="./assets/img/interative_img.png"
-        />
+      <div id="big_img_interative" class="active">
+        <div class="big_img">
+          <img
+            class="img_big_option_item"
+            src="./assets/img/interative_img.png"
+          />
+        </div>
+      </div>
+      <div id="big_img_promote" class="inactive">
+        <div class="big_img">
+          <img class="img_big_option_item" src="./assets/img/promote_img.png" />
+        </div>
+      </div>
+      <div id="big_img_potential" class="inactive">
+        <div class="big_img">
+          <img
+            class="img_big_option_item"
+            src="./assets/img/potential_img.png"
+          />
+        </div>
+      </div>
+      <div id="big_img_manage" class="inactive">
+        <div class="big_img">
+          <img class="img_big_option_item" src="./assets/img/manage_img.png" />
+        </div>
       </div>
     </div>
     <div style="position: relative; width: 100%" class="section_solution">
@@ -340,7 +381,7 @@
             align-items: center;
           "
         >
-          <div class="auto_text" style='color: #0047cc'>Chatbot tự động</div>
+          <div class="auto_text" style="color: #0047cc">Chatbot tự động</div>
           <div class="text_desc" style="margin-bottom: 15px">
             Chủ động chào hỏi mỗi khi khách hàng truy cập, trả lời các cuộc trò
             chuyện từ một màn hình, bất cứ nơi nào khách hàng của bạn nhắn tin
@@ -350,7 +391,9 @@
       </div>
       <div class="auto_item">
         <div class="mid_item">
-          <div class="auto_text" style='color: #0047cc'>Tự động phân công việc</div>
+          <div class="auto_text" style="color: #0047cc">
+            Tự động phân công việc
+          </div>
           <div class="text_desc">
             Phân phối các cuộc hội thoại đến đúng tư vấn viên, hỗ trợ khách hàng
             nhanh chóng, tương tác chuyên nghiệp với những mẫu tin nhắn có sẵn,
@@ -362,7 +405,9 @@
           <img src="./assets/img/auto_assign_img.png" class="auto_img" />
         </div>
         <div class="bottom_item">
-          <div class="auto_text" style='color: #0047cc'>Tự động phân công việc</div>
+          <div class="auto_text" style="color: #0047cc">
+            Tự động phân công việc
+          </div>
           <div class="text_desc" style="margin-bottom: 15px">
             Phân phối các cuộc hội thoại đến đúng tư vấn viên, hỗ trợ khách hàng
             nhanh chóng, tương tác chuyên nghiệp với những mẫu tin nhắn có sẵn,
@@ -383,7 +428,9 @@
             align-items: center;
           "
         >
-          <div class="auto_text" style='color: #0047cc'>Tự động phản hồi khách hàng</div>
+          <div class="auto_text" style="color: #0047cc">
+            Tự động phản hồi khách hàng
+          </div>
           <div class="text_desc" style="margin-bottom: 15px">
             Tự động hóa các tương tác, phản hồi khách hàng trên trang Mạng xã
             hội dựa trên hành vi khách hàng, tăng sự hài lòng, trải nghiệm tốt
@@ -822,63 +869,27 @@
     var option = [{ id: "interative", background: "" }];
 
     var status_option = "interative";
-    var text_option = `<p class="header_option_item">Tương tác với khách hàng</p>
-          <p class="text_option_item">
-            Tương tác với khách hàng trên nhiều kênh ngay trên một nền tảng
-            Website, Tổng đài, Mạng xã hội,...
-          </p>`;
-
-    var img_option = `<img
-          class="img_big_option_item"
-          src="./assets/img/interative_img.png"
-        />`;
 
     function changeStatusOption(option) {
+      document
+        .getElementById(`text_${status_option}`)
+        .classList.remove("active");
+      document
+        .getElementById(`big_img_${status_option}`)
+        .classList.remove("active");
+      document
+        .getElementById(`text_${status_option}`)
+        .classList.add("inactive");
+      document
+        .getElementById(`big_img_${status_option}`)
+        .classList.add("inactive");
+
+      document.getElementById(`text_${option}`).classList.remove("inactive");
+      document.getElementById(`big_img_${option}`).classList.remove("inactive");
+      document.getElementById(`text_${option}`).classList.add("active");
+      document.getElementById(`big_img_${option}`).classList.add("active");
+
       status_option = option;
-      if (option === "interative") {
-        text_option = `<p class="header_option_item">Tương tác với khách hàng</p>
-          <p class="text_option_item">
-            Tương tác với khách hàng trên nhiều kênh ngay trên một nền tảng
-            Website, Tổng đài, Mạng xã hội,...
-          </p>`;
-        img_option = `<img
-          class="img_big_option_item"
-          src="./assets/img/interative_img.png"
-        />`;
-      }
-
-      if (option === "promote") {
-        text_option = `<p class="header_option_item">Thúc đẩy bán hàng</p>
-          <p class="text_option_item">
-            Chủ động chào hỏi khách hàng truy cập. Cá nhân hoá cuộc trò chuyện, tạo lòng tin cho khách hàng
-          </p>`;
-        img_option = `<img
-          class="img_big_option_item"
-          src="./assets/img/promote_img.png"
-        />`;
-      }
-
-      if (option === "potential") {
-        text_option = `<p class="header_option_item">Chuyển đổi khách hàng tiềm năng</p>
-          <p class="text_option_item">
-            Kết hợp tư vấn bán hàng qua tin nhắn, đồng thời nghe - gọi điện chăm sóc, chuyển đổi khách hàng tiềm năng thành khách mua hàng
-          </p>`;
-        img_option = `<img
-          class="img_big_option_item"
-          src="./assets/img/interative_img.png"
-        />`;
-      }
-
-      if (option === "manage") {
-        text_option = `<p class="header_option_item">Quản trị khách hàng</p>
-          <p class="text_option_item">
-            Thu thập dữ liệu thông tin khách hàng: Đến từ kênh nào, sử dụng thiết bị gì, email, số điện thoại, ...
-          </p>`;
-        img_option = `<img
-          class="img_big_option_item"
-          src="./assets/img/interative_img.png"
-        />`;
-      }
 
       if (document.getElementById(option).className === "background_icon") {
         document.getElementById(`${option}`).classList.add(`${option}_back`);
@@ -907,12 +918,6 @@
           .getElementById(`img_${option}_inactive`)
           .classList.add("active");
       }
-
-      // document.getElementsByClassName("header_option_item")[0].remove();
-      // document.getElementsByClassName('options_content').removeChild(document.getElementsByClassName('header_option_item')[0])
-      // document.getElementsByClassName('options_content').removeChild(document.getElementsByClassName('text_option_item')[0])
-      document.getElementsByClassName("options_content").innerHTML =
-        text_option;
       return;
     }
 
@@ -933,11 +938,11 @@
       changeStatusOption("manage");
     });
 
-    function moreInfo() {}
-    var item_footer_1 = document.getElementsByClassName("item_footer_1");
-    var more_footer_1 = document.getElementsByClassName("more_footer_1");
-    this.item_footer_1.addEventListener("click", function () {
-      more_footer_1.classList.add("more_footer");
-    });
+    // function moreInfo() {}
+    // var item_footer_1 = document.getElementsByClassName("item_footer_1");
+    // var more_footer_1 = document.getElementsByClassName("more_footer_1");
+    // this.item_footer_1.addEventListener("click", function () {
+    //   more_footer_1.classList.add("more_footer");
+    // });
   </script>
 </html>
