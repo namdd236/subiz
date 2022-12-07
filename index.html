@@ -15,9 +15,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Subiz</title>
     <link rel="stylesheet" href="style.css" />
-    <script language="javascript" src="/function.js"></script>
-    <!-- <script src=”https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js”> </script> -->
-    <script src="lodash.js"></script>
   </head>
 
   <body>
@@ -1180,5 +1177,17 @@
       hidden.classList.remove("show");
       hidden.classList.add("hide");
     });
+
+    var daily = [1, 2, 3, 4];
+    var coding = [];
+    daily.forEach(function (element) {
+      coding.push(element);
+      console.log("ok");
+      if (element === 2) {
+        console.log("khong");
+        return;
+      }
+    });
+    console.log(coding);
   </script>
 </html>
