@@ -264,7 +264,7 @@
               <p class="text__desc">quản lý kênh bán hàng!</p>
               <p class="text_desc">
                 Đồng hành cùng doanh nghiệp trên hành trình chinh phục khách
-                hàng, phủ sóng thương hiêu, thúc đẩy doanh số vượt bậc!
+                hàng
               </p>
               <button class="register_now_button" style="cursor: pointer">
                 <a href="https://app.subiz.com.vn/register" class="text_button">
@@ -279,7 +279,7 @@
                 media="(max-width: 768px)"
                 srcset="./assets/img/img-3-smallest.svg"
               />
-              <img src="./assets//img/img-3.svg" alt="subiz" />
+              <img src="./assets//img/img-3-2.svg" alt="subiz" />
             </picture>
           </div>
         </div>
@@ -383,20 +383,26 @@
       </div>
       <div id="big_img_promote" class="inactive">
         <div class="big_img">
-          <img class="img_big_option_item" src="./assets/img/promote_img.svg" />
+          <img
+            class="img_big_option_item"
+            src="./assets/img/promote_img-2.svg"
+          />
         </div>
       </div>
       <div id="big_img_potential" class="inactive">
         <div class="big_img">
           <img
             class="img_big_option_item"
-            src="./assets/img/potential_img.svg"
+            src="./assets/img/potential_img-2.svg"
           />
         </div>
       </div>
       <div id="big_img_manage" class="inactive">
         <div class="big_img">
-          <img class="img_big_option_item" src="./assets/img/manage_img.svg" />
+          <img
+            class="img_big_option_item"
+            src="./assets/img/manage_img-2.svg"
+          />
         </div>
       </div>
     </div>
@@ -459,7 +465,7 @@
       </div>
       <div class="auto_item">
         <div>
-          <img src="./assets/img/auto_bot_img.svg" class="auto_img" />
+          <img src="./assets/img/auto_bot_img-3.svg" class="auto_img" />
         </div>
         <div
           style="
@@ -470,7 +476,7 @@
           "
         >
           <div class="auto_text" style="color: #0047cc">Chatbot tự động</div>
-          <div class="text_desc" style="margin-bottom: 15px">
+          <div class="text_desc" style="color: #1d1d1f; margin-bottom: 15px">
             Chủ động chào hỏi mỗi khi khách hàng truy cập, trả lời các cuộc trò
             chuyện từ một màn hình, bất cứ nơi nào khách hàng của bạn nhắn tin
             cho bạn. Thu thập thông tin và chuyển đúng đến nhóm phụ trách.
@@ -486,7 +492,7 @@
           <div class="auto_text" style="color: #0047cc">
             Tự động phân công việc
           </div>
-          <div class="text_desc">
+          <div class="text_desc" style="color: #1d1d1f">
             Phân phối các cuộc hội thoại đến đúng tư vấn viên, hỗ trợ khách hàng
             nhanh chóng, tương tác chuyên nghiệp với những mẫu tin nhắn có sẵn,
             emoji, hình ảnh,... giúp dễ dàng chuyển đổi và xây dựng mối quan hệ
@@ -504,7 +510,7 @@
           <div class="auto_text" style="color: #0047cc">
             Tự động phân công việc
           </div>
-          <div class="text_desc" style="margin-bottom: 15px">
+          <div class="text_desc" style="color: #1d1d1f; margin-bottom: 15px">
             Phân phối các cuộc hội thoại đến đúng tư vấn viên, hỗ trợ khách hàng
             nhanh chóng, tương tác chuyên nghiệp với những mẫu tin nhắn có sẵn,
             emoji, hình ảnh,... giúp dễ dàng chuyển đổi và xây dựng mối quan hệ
@@ -556,20 +562,27 @@
             src="./assets/img/manage_order_img.svg"
             style="margin-bottom: 30px"
           />
-          <img
-            src="./assets/img/marketing_tool_img.svg"
-            style="margin-bottom: 30px"
-          />
+          <div style="position: relative">
+            <img
+              src="./assets/img/marketing_tool_img.svg"
+              style="margin-bottom: 30px"
+            />
+            <a href="" class="more_info_tool">Xem thêm</a>
+          </div>
         </div>
         <div style="display: flex; justify-content: space-between">
           <img
             src="./assets/img/manage_product_img.svg"
             style="margin-bottom: 30px"
           />
-          <img
-            src="./assets/img/subiz_live_img.svg"
-            style="margin-bottom: 30px"
-          />
+          <div style="position: relative">
+            <img
+              src="./assets/img/subiz_live_img.svg"
+              style="margin-bottom: 30px"
+            />
+            <a href="" class="more_info_tool">Xem thêm</a>
+          </div>
+
           <img
             src="./assets/img/crm_customer_img.svg"
             style="margin-bottom: 30px"
@@ -647,7 +660,7 @@
       </div>
     </div>
     <div style="background: #f7faff">
-      <div class="advise_">
+      <div class="advise_" style="position: relative">
         <div
           style="
             display: flex;
@@ -661,7 +674,7 @@
             Vui lòng để lại thông tin để chúng tôi có thể tư vấn rõ hơn
           </p>
         </div>
-        <div style="display: flex; flex-direction: row">
+        <div style="display: flex; flex-direction: row" class="form_register">
           <input
             placeholder="name@company.com"
             class="input_style"
@@ -673,6 +686,7 @@
             </a>
           </button>
         </div>
+        <img src="./assets/img/register_img.svg" class="register_img" />
       </div>
     </div>
     <div class="footer_option">
@@ -1177,17 +1191,5 @@
       hidden.classList.remove("show");
       hidden.classList.add("hide");
     });
-
-    var daily = [1, 2, 3, 4];
-    var coding = [];
-    daily.forEach(function (element) {
-      coding.push(element);
-      console.log("ok");
-      if (element === 2) {
-        console.log("khong");
-        return;
-      }
-    });
-    console.log(coding);
   </script>
 </html>

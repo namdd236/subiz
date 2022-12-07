@@ -565,7 +565,36 @@ ul.dropdown_menu > li:hover > a {
   font-size: 22px;
 }
 
+.register_img {
+  position: absolute;
+  right: 0;
+  top: 33px;
+  z-index: 2;
+}
+
+.form_register {
+  margin-right: 60px;
+  z-index: 3;
+}
+
+.more_info_tool {
+  position: absolute;
+  top: 125px;
+  right: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #0047cc;
+}
+
 @media (max-width: 768px) {
+  .form_register {
+    margin-right: 0;
+  }
+
+  .register_img {
+    display: none;
+  }
+
   .solution_item {
     display: none;
   }
