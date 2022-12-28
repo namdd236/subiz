@@ -17,14 +17,14 @@
 <body>
   <header class="page-header">
     <div class="header_content">
-      <a href="https://subiz.com.vn/vi/" class="logo-subiz" style="cursor: pointer; width: 20%;">
+      <a href="https://subiz.com.vn/vi/" class="logo_subiz">
         <picture>
           <source media="(max-width: 768px)" srcset="./assets/img/logo-subiz-smallest.svg" />
-          <img src="./assets/img/logo_footer.svg" style="width: 100%;" />
+          <img loading="lazy" src="./assets/img/logo_footer.svg" class="full" alt="logo-subiz" />
         </picture>
       </a>
-      <div class="menu" style="width: 60%;">
-        <ul id="menu" style="display: flex; justify-content: space-evenly">
+      <div class="menu">
+        <ul id="menu">
           <li>
             <a href="javascript:void(0)" class="text__menu">
               Tính năng<span class="arrow arrow-down"></span>
@@ -144,20 +144,20 @@
           </li> -->
         </ul>
       </div>
-      <div class="button" style="width: 30%;">
-        <button class="register_button" style="background: none; width: 50%;">
+      <div class="button">
+        <button class="register_button" style="background: none;">
           <a href="https://app.subiz.com.vn/login?redirect=%2Fconvo" class="text__button">
             Đăng nhập
           </a>
         </button>
-        <button class="register_button" style="width: 50%;">
+        <button class="register_button">
           <a href="https://app.subiz.com.vn/register" class="text__button">Đăng ký</a>
         </button>
       </div>
-      <a class="menu_button" style="cursor: pointer" id="menu-button">
-        <img src="./assets/img/menu_img.png" class="" />
+      <a class="menu_button" id="menu-button">
+        <img loading="lazy" src="./assets/img/menu_img.png" alt="menu" />
       </a>
-      <div class="hidden_menu hide" style="overflow-y: scroll">
+      <div class="hidden_menu hide" >
         <div>
           <a href="javascript:void(0)" id="close">×</a>
           <div id="item_footer_7" class="head_menu_item">
@@ -229,65 +229,56 @@
       </div>
     </div>
   </header>
-  <section class="section_info">
+  <section class="section section_info">
     <div class="content_header">
-      <div class="content_header_1">
-        <div style="
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-              width: 50%;
-            ">
-          <div class="text_style">
-            <p class="text__desc">Kết nối</p>
-            <p class="text__desc">Tương tác hỗ trợ</p>
-            <p class="text__desc">quản lý kênh bán hàng!</p>
-            <p class="text_desc">
-              Đồng hành cùng doanh nghiệp trên hành trình chinh phục khách
-              hàng
-            </p>
-            <button class="register_now_button" style="cursor: pointer">
-              <a href="https://app.subiz.com.vn/register" class="text_button">
-                Đăng ký ngay
-              </a>
-            </button>
-          </div>
-        </div>
-        <div style="width: 50%;">
-          <picture>
-            <source media="(max-width: 768px)" srcset="./assets/img/img-3-smallest.svg" />
-            <img src="./assets//img/img-3-2.svg" alt="subiz" style="width: 100%;" />
-          </picture>
+      <div class="content_info_left">
+        <div class="text_style">
+          <p class="text__desc">Kết nối</p>
+          <p class="text__desc">Tương tác hỗ trợ</p>
+          <p class="text__desc">quản lý kênh bán hàng!</p>
+          <p class="text_desc">
+            Đồng hành cùng doanh nghiệp trên hành trình chinh phục khách
+            hàng
+          </p>
+          <button class="register_now_button">
+            <a href="https://app.subiz.com.vn/register" class="text_button">
+              Đăng ký ngay
+            </a>
+          </button>
         </div>
       </div>
+      <div class="content_info_right">
+        <picture>
+          <source media="(max-width: 768px)" srcset="./assets/img/img-3-smallest.svg" />
+          <img loading="lazy" src="./assets//img/img-3-2.svg" alt="subiz" class="full" />
+        </picture>
+      </div>
     </div>
-
-    <div></div>
   </section>
-  <section class="options_container">
+  <section class="section section_options">
     <div class="options half">
       <div class="img_options">
         <div class="background_icon interative_back" id="interative">
-          <img id="img_interative_active" src="./assets/img/interative_icon_active.png"
-            class="img_option_item_active active" />
-          <img id="img_interative_inactive" src="./assets/img/interative_icon.png"
-            class="img_option_item_inactive inactive" />
+          <img loading="lazy" id="img_interative_active" src="./assets/img/interative_icon_active.png"
+            class="img_option_item_active active" alt="interative-icon" />
+          <img loading="lazy" id="img_interative_inactive" src="./assets/img/interative_icon.png"
+            class="img_option_item_inactive inactive" alt="interative-icon" />
         </div>
         <div class="background_icon" id="promote">
-          <img id="img_promote_active" src="./assets/img/promote_icon_active.png"
-            class="img_option_item_active inactive" />
-          <img id="img_promote_inactive" src="./assets/img/promote_icon.png" class="img_option_item_inactive active" />
+          <img loading="lazy" id="img_promote_active" src="./assets/img/promote_icon_active.png"
+            class="img_option_item_active inactive" alt="promote-icon" />
+          <img loading="lazy" id="img_promote_inactive" src="./assets/img/promote_icon.png" class="img_option_item_inactive active" alt="promote-icon" />
         </div>
         <div class="background_icon" id="potential">
-          <img id="img_potential_active" src="./assets/img/potential_icon_active.png"
-            class="img_option_item_active inactive" />
-          <img id="img_potential_inactive" src="./assets/img/potential_icon.png"
-            class="img_option_item_inactive active" />
+          <img loading="lazy" id="img_potential_active" src="./assets/img/potential_icon_active.png"
+            class="img_option_item_active inactive" alt="potential-icon" />
+          <img loading="lazy" id="img_potential_inactive" src="./assets/img/potential_icon.png"
+            class="img_option_item_inactive active" alt="potetial-icon" />
         </div>
         <div class="background_icon" id="manage">
-          <img id="img_manage_active" src="./assets/img/manage_icon_active.png"
-            class="img_option_item_active inactive" />
-          <img id="img_manage_inactive" src="./assets/img/manage_icon.png" class="img_option_item_inactive active" />
+          <img loading="lazy" id="img_manage_active" src="./assets/img/manage_icon_active.png"
+            class="img_option_item_active inactive" alt="manage-icon" />
+          <img loading="lazy" id="img_manage_inactive" src="./assets/img/manage_icon.png" class="img_option_item_inactive active" alt="manage-icon" />
         </div>
       </div>
       <div class="options_content active" id="text_interative">
@@ -326,68 +317,59 @@
     </div>
     <div id="big_img_interative" class="half active">
       <div class="big_img">
-        <img class="img_big_option_item" src="./assets/img/interative_img.svg" />
+        <img loading="lazy" class="img_big_option_item" src="./assets/img/interative_img.svg" alt="interative-img" />
       </div>
     </div>
     <div id="big_img_promote" class="half inactive">
       <div class="big_img">
-        <img class="img_big_option_item" src="./assets/img/promote_img-2.svg" />
+        <img loading="lazy" class="img_big_option_item" src="./assets/img/promote_img-2.svg" alt="promote-img" />
       </div>
     </div>
     <div id="big_img_potential" class="half inactive">
       <div class="big_img">
-        <img class="img_big_option_item" src="./assets/img/potential_img-2.svg" />
+        <img loading="lazy" class="img_big_option_item" src="./assets/img/potential_img-2.svg" alt="potetial-img" />
       </div>
     </div>
     <div id="big_img_manage" class="half inactive">
       <div class="big_img">
-        <img class="img_big_option_item" src="./assets/img/manage_img-2.svg" />
+        <img loading="lazy" class="img_big_option_item" src="./assets/img/manage_img-2.svg" alt="manage-img" />
       </div>
     </div>
   </section>
-  <section style="position: relative; width: 100%" class="section_solution">
-    <img src="./assets/img/background_mxh.png" style="width: 100%" />
-    <p class="header_solution" style="color: #0047cc">
-      Giải pháp quản lý tập trung nhiều kênh tương tác khách hàng
-    </p>
-    <div>
-      <picture>
-        <source media="(max-width: 768px)" srcset="./assets/img/solution_mobile.svg" />
-        <img class="solution" src="./assets/img/img_mxh.svg" />
-      </picture>
+  <section class="section section_solution">
+    <div class="content_solution">
+      <p class="header_automatic" style="color: #0047cc">
+        Giải pháp quản lý tập trung nhiều kênh tương tác khách hàng
+      </p>
+      <div class="img_solution">
+        <picture>
+          <source media="(max-width: 768px)" srcset="./assets/img/solution_mobile.svg" />
+          <img loading="lazy" class="solution" src="./assets/img/img_mxh.svg" alt="solution" />
+        </picture>
+      </div>
+      <p class="solution_item" style="top: 235px; left: 325px; width: 135px">
+        Biến website thành cửa hàng vật lý
+      </p>
+      <p class="solution_item" style="top: 220px; right: 325px; width: 145px">
+        Quản lý đồng thời tất cả các fanpage
+      </p>
+      <p class="solution_item" style="top: 460px; right: 30px; width: 235px">
+        Nhận và trả lời email khách hàng ngay trên Subiz với nhiều tiện ích hỗ
+        trợ mạnh mẽ.
+      </p>
+      <p class="solution_item" style="top: 800px; right: 260px; width: 150px">
+        Kết nối không giới hạn các tài khoản Zalo OA
+      </p>
+      <p class="solution_item" style="top: 870px; left: 335px; width: 180px">
+        Kết nối không giới hạn số lượng tài khoản Instagram Business
+      </p>
+      <p class="solution_item" style="top: 580px; left: 100px; width: 150px;">
+        Nghe - gọi trực tiếp trên màn hình Subiz
+      </p>
     </div>
-    <p class="solution_item" style="top: 300px; left: 560px; width: 135px">
-      Biến website thành cửa hàng vật lý
-    </p>
-    <p class="solution_item" style="top: 265px; right: 560px; width: 145px">
-      Quản lý đồng thời tất cả các fanpage
-    </p>
-    <p class="solution_item" style="top: 460px; right: 265px; width: 235px">
-      Nhận và trả lời email khách hàng ngay trên Subiz với nhiều tiện ích hỗ
-      trợ mạnh mẽ.
-    </p>
-    <p class="solution_item" style="top: 745px; right: 480px; width: 150px">
-      Kết nối không giới hạn các tài khoản Zalo OA
-    </p>
-    <p class="solution_item" style="top: 845px; left: 545px; width: 180px">
-      Kết nối không giới hạn số lượng tài khoản Instagram Business
-    </p>
-    <p class="solution_item" style="width: 150px; top: 580px; left: 350px">
-      Nghe - gọi trực tiếp trên màn hình Subiz
-    </p>
   </section>
-  <section style="
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 80px;
-      ">
-    <div style="
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        ">
+  <section class="section section_automatic">
+    <div class="header_center">
       <p class="header_automatic">TỰ ĐỘNG HÓA</p>
       <p class="text_desc header">
         Tự động vận hành và thiết lập nhiều chiến dịch tương tác khách hàng tự
@@ -397,32 +379,27 @@
     </div>
     <div class="auto_item">
       <div class="half">
-        <img src="./assets/img/auto_bot_img-3.svg" class="auto_img" />
+        <img loading="lazy" src="./assets/img/auto_bot_img-3.svg" class="auto_img" alt="auto-bot" />
       </div>
-      <div class="half" style="
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          ">
-        <div class="auto_text" style="color: #0047cc">Chatbot tự động</div>
-        <div class="text_desc" style="color: #1d1d1f; margin-bottom: 15px">
+      <div class="half content_automatic">
+        <div class=" auto_text font_color_subiz">Chatbot tự động</div>
+        <div class="text_desc font_color_dark">
           Chủ động chào hỏi mỗi khi khách hàng truy cập, trả lời các cuộc trò
           chuyện từ một màn hình, bất cứ nơi nào khách hàng của bạn nhắn tin
           cho bạn. Thu thập thông tin và chuyển đúng đến nhóm phụ trách.
         </div>
         <!-- <div class="show_more_content">
           <span class="text_show_more_content"> Tìm hiểu thêm </span>
-          <img src="./assets/img/arrow_left.png" style="width: 41px" />
+          <img loading="lazy" src="./assets/img/arrow_left.png" style="width: 41px" />
         </div> -->
       </div>
     </div>
     <div class="auto_item">
       <div class="mid_item half">
-        <div class="auto_text" style="color: #0047cc">
+        <div class="auto_text font_color_subiz">
           Tự động phân công việc
         </div>
-        <div class="text_desc" style="color: #1d1d1f">
+        <div class="text_desc font_color_dark">
           Phân phối các cuộc hội thoại đến đúng tư vấn viên, hỗ trợ khách hàng
           nhanh chóng, tương tác chuyên nghiệp với những mẫu tin nhắn có sẵn,
           emoji, hình ảnh,... giúp dễ dàng chuyển đổi và xây dựng mối quan hệ
@@ -430,17 +407,17 @@
         </div>
         <!-- <div class="show_more_content">
           <span class="text_show_more_content"> Tìm hiểu thêm </span>
-          <img src="./assets/img/arrow_left.png" style="width: 41px" />
+          <img loading="lazy" src="./assets/img/arrow_left.png" style="width: 41px" />
         </div> -->
       </div>
       <div>
-        <img src="./assets/img/auto_assign_img.svg" class="auto_img" alt="auto-assign" />
+        <img loading="lazy" src="./assets/img/auto_assign_img.svg" class="auto_img" alt="auto-assign" />
       </div>
       <div class="bottom_item">
-        <div class="auto_text" style="color: #0047cc">
+        <div class="auto_text font_color_subiz">
           Tự động phân công việc
         </div>
-        <div class="text_desc" style="color: #1d1d1f; margin-bottom: 15px">
+        <div class="text_desc font_color_dark">
           Phân phối các cuộc hội thoại đến đúng tư vấn viên, hỗ trợ khách hàng
           nhanh chóng, tương tác chuyên nghiệp với những mẫu tin nhắn có sẵn,
           emoji, hình ảnh,... giúp dễ dàng chuyển đổi và xây dựng mối quan hệ
@@ -450,18 +427,13 @@
     </div>
     <div class="auto_item">
       <div class="half">
-        <img src="./assets/img/auto_reply_img.svg" class="auto_img" alt="auto-reply" />
+        <img loading="lazy" src="./assets/img/auto_reply_img.svg" class="auto_img" alt="auto-reply" />
       </div>
-      <div class="half" style="
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-          ">
-        <div class="auto_text" style="color: #0047cc">
+      <div class="half header_center" >
+        <div class="auto_text font_color_subiz">
           Tự động phản hồi khách hàng
         </div>
-        <div class="text_desc" style="color: #1d1d1f; margin-bottom: 15px">
+        <div class="text_desc font_color_dark">
           Tự động hóa các tương tác, phản hồi khách hàng trên trang Mạng xã
           hội dựa trên hành vi khách hàng, tăng sự hài lòng, trải nghiệm tốt
           và dễ dàng thuyết phục khách hàng sử dụng sản phẩm/dịch vụ
@@ -469,223 +441,215 @@
       </div>
     </div>
   </section>
-  <section class="background_tool">
-    <div style="
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        ">
-      <p class="header_automatic">CÔNG CỤ HỖ TRỢ</p>
-    </div>
-    <div class="flex_img_row">
-      <div style="display: flex; justify-content: space-between">
-        <div class="tool">
-          <div class="tool_content">
-            <p class="tool_content_header">
-              Quản lý theo đội nhóm
-            </p>
-            <p class="tool_content_desc">
-              Subiz là phần mềm làm việc theo đội nhóm thông qua rule phân phối, phần quyền kiểm soát được các Agent của
-              mình về hiệu suất làm việc,...
-            </p>
-            <!-- <p>
-              Xem thêm
-            </p> -->
-          </div>
-          <img src="./assets/img/manage_group_img.svg" style="width: 100%" alt="manage-group" />
+  <section class="section section_tool">
+    <div class="tool_body">
+      <div class="header_center">
+        <p class="header_automatic">CÔNG CỤ HỖ TRỢ</p>
+      </div>
+      <div class="flex_img_row">
+        <div class="d-flex">
+          <div class="tool">
+            <div class="tool_content">
+              <p class="tool_content_header">
+                Quản lý theo đội nhóm
+              </p>
+              <p class="tool_content_desc">
+                Subiz là phần mềm làm việc theo đội nhóm thông qua rule phân phối, phần quyền kiểm soát được các Agent
+                của
+                mình về hiệu suất làm việc,...
+              </p>
+              <!-- <p>
+                Xem thêm
+              </p> -->
+            </div>
+            <img loading="lazy" src="./assets/img/manage_group_img.svg" class="full" alt="manage-group" />
 
-        </div>
-        <div class="tool">
-          <div class="tool_content">
-            <p class="tool_content_header">
-              Quản lý đơn hàng
-            <p class="tool_content_desc">
-              Subiz giúp bạn quản lý đơn hàng và số hóa trên hệ thống chi tiết người quản lý đơn hàng, tình trạng đơn
-              hàng, thời gian, số tiền,....
-            </p>
-            <!-- <p>
-              Xem thêm
-            </p> -->
           </div>
-          <img src="./assets/img/manage_order_img.svg" style="width: 100%" alt="manage-order" />
-        </div>
-        <div class="tool">
-          <div class="tool_content">
-            <p class="tool_content_header">
-              Công cụ Marketing
-            </p>
-            <p class="tool_content_desc">
-              Tính năng Popup thông minh hoạt động như một cửa sổ quảng cáo gồm nhiều thông tin và nút kêu gọi hành động
-              đối với từng nhóm khách hàng mục tiêu.
-            </p>
-            <!-- <p>
-              Xem thêm
-            </p> -->
+          <div class="tool">
+            <div class="tool_content">
+              <p class="tool_content_header">
+                Quản lý đơn hàng
+              <p class="tool_content_desc">
+                Subiz giúp bạn quản lý đơn hàng và số hóa trên hệ thống chi tiết người quản lý đơn hàng, tình trạng đơn
+                hàng, thời gian, số tiền,....
+              </p>
+              <!-- <p>
+                Xem thêm
+              </p> -->
+            </div>
+            <img loading="lazy" src="./assets/img/manage_order_img.svg" class="full" alt="manage-order" />
           </div>
-          <img src="./assets/img/marketing_tool_img.svg" style="width: 100%" alt="marketing-tool" />
-        </div>
-      </div>
-      <div style="display: flex; justify-content: space-between">
-        <div class="tool">
-          <div class="tool_content">
-            <p class="tool_content_header">
-              Quản lý sản phẩm
-            </p>
-            <p class="tool_content_desc">
-              Subiz giúp bạn phân chia và tìm kiếm sản phẩm theo tên - mã. Thống kê chi tiết số lượng mặt hàng còn hoặc
-              đã hết.
-            </p>
-            <!-- <p>
-              Xem thêm
-            </p> -->
+          <div class="tool">
+            <div class="tool_content">
+              <p class="tool_content_header">
+                Công cụ Marketing
+              </p>
+              <p class="tool_content_desc">
+                Tính năng Popup thông minh hoạt động như một cửa sổ quảng cáo gồm nhiều thông tin và nút kêu gọi hành
+                động
+                đối với từng nhóm khách hàng mục tiêu.
+              </p>
+              <!-- <p>
+                Xem thêm
+              </p> -->
+            </div>
+            <img loading="lazy" src="./assets/img/marketing_tool_img.svg" class="full" alt="marketing-tool" />
           </div>
-          <img src="./assets/img/manage_product_img.svg" style="width: 100%" alt="manage-product" />
         </div>
-        <div class="tool">
-          <div class="tool_content">
-            <p class="tool_content_header">
-              Subiz live
-            </p>
-            <p class="tool_content_desc">
-              Tương tác, tư vấn và hỗ trợ khách hàng trực tiếp; thu thập thông tin khách hàng, xây dựng khách hàng tiềm
-              năng và bán hàng trên website hiệu quả
-            </p>
-            <!-- <p>
-              Xem thêm
-            </p> -->
+        <div class="d-flex">
+          <div class="tool">
+            <div class="tool_content">
+              <p class="tool_content_header">
+                Quản lý sản phẩm
+              </p>
+              <p class="tool_content_desc">
+                Subiz giúp bạn phân chia và tìm kiếm sản phẩm theo tên - mã. Thống kê chi tiết số lượng mặt hàng còn
+                hoặc
+                đã hết.
+              </p>
+              <!-- <p>
+                Xem thêm
+              </p> -->
+            </div>
+            <img loading="lazy" src="./assets/img/manage_product_img.svg" class="full" alt="manage-product" />
           </div>
-          <img src="./assets/img/subiz_live_img.svg" style="width: 100%;" alt="subiz-live" />
-        </div>
-        <div class="tool">
-          <div class="tool_content">
-            <p class="tool_content_header">
-              CRM quản lý khách hàng
-            </p>
-            <p class="tool_content_desc">
-              Các dữ liệu có được về khách truy cập sẽ tự động được lưu trữ vào hệ thống CRM: từ tên, địa chỉ email, số
-              điện thoại,....
-            </p>
-            <!-- <a>Xem thêm</a> -->
+          <div class="tool">
+            <div class="tool_content">
+              <p class="tool_content_header">
+                Subiz live
+              </p>
+              <p class="tool_content_desc">
+                Tương tác, tư vấn và hỗ trợ khách hàng trực tiếp; thu thập thông tin khách hàng, xây dựng khách hàng
+                tiềm
+                năng và bán hàng trên website hiệu quả
+              </p>
+              <!-- <p>
+                Xem thêm
+              </p> -->
+            </div>
+            <img loading="lazy" src="./assets/img/subiz_live_img.svg" class="full" alt="subiz-live" />
           </div>
-          <img src="./assets/img/crm_customer_img.svg" style="width: 100%" alt="crm-customer" />
-        </div>
-      </div>
-    </div>
-    <div class="flex_img_column">
-      <div style="display: flex; justify-content: space-between">
-        <div class="tool">
-          <div class="tool_content">
-            <p class="tool_content_header">
-              Quản lý theo đội nhóm
-            </p>
+          <div class="tool">
+            <div class="tool_content">
+              <p class="tool_content_header">
+                CRM quản lý khách hàng
+              </p>
+              <p class="tool_content_desc">
+                Các dữ liệu có được về khách truy cập sẽ tự động được lưu trữ vào hệ thống CRM: từ tên, địa chỉ email,
+                số
+                điện thoại,....
+              </p>
+              <!-- <a>Xem thêm</a> -->
+            </div>
+            <img loading="lazy" src="./assets/img/crm_customer_img.svg" class="full" alt="crm-customer" />
           </div>
-          <img src="./assets/img/manage_group_img.svg" style="width: 100%;" alt="manage-group" />
-        </div>
-        <div class="tool">
-          <div class="tool_content">
-            <p class="tool_content_header">
-              Quản lý đơn hàng
-            </p>
-          </div>
-          <img src="./assets/img/manage_order_img.svg" style="width: 100%;" alt="manage-order" />
         </div>
       </div>
-      <div style="display: flex; justify-content: space-between">
-        <div class="tool">
-          <div class="tool_content">
-            <p class="tool_content_header">
-              Công cụ Marketing
-            </p>
+      <div class="flex_img_column">
+        <div class="d-flex">
+          <div class="tool">
+            <div class="tool_content">
+              <p class="tool_content_header">
+                Quản lý theo đội nhóm
+              </p>
+            </div>
+            <img loading="lazy" src="./assets/img/manage_group_img.svg" class="full" alt="manage-group" />
           </div>
-          <img src="./assets/img/marketing_tool_img.svg" style="width: 100%;" alt="marketing-tool" />
+          <div class="tool">
+            <div class="tool_content">
+              <p class="tool_content_header">
+                Quản lý đơn hàng
+              </p>
+            </div>
+            <img loading="lazy" src="./assets/img/manage_order_img.svg" class="full" alt="manage-order" />
+          </div>
         </div>
-        <div class="tool">
-          <div class="tool_content">
-            <p class="tool_content_header">
-              Quản lý sản phẩm
-            </p>
+        <div class="d-flex">
+          <div class="tool">
+            <div class="tool_content">
+              <p class="tool_content_header">
+                Công cụ Marketing
+              </p>
+            </div>
+            <img loading="lazy" src="./assets/img/marketing_tool_img.svg" class="full" alt="marketing-tool" />
           </div>
-          <img src="./assets/img/manage_product_img.svg" style="width: 100%;" alt="manage-product" />
+          <div class="tool">
+            <div class="tool_content">
+              <p class="tool_content_header">
+                Quản lý sản phẩm
+              </p>
+            </div>
+            <img loading="lazy" src="./assets/img/manage_product_img.svg" class="full" alt="manage-product" />
+          </div>
         </div>
-      </div>
-      <div style="display: flex; justify-content: space-between">
-        <div class="tool">
-          <div class="tool_content">
-            <p class="tool_content_header">
-              Subiz live
-            </p>
+        <div class="d-flex">
+          <div class="tool">
+            <div class="tool_content">
+              <p class="tool_content_header">
+                Subiz live
+              </p>
+            </div>
+            <img loading="lazy" src="./assets/img/subiz_live_img.svg" class="full" alt="subiz-live" />
           </div>
-          <img src="./assets/img/subiz_live_img.svg" style="width: 100%;" alt="subiz-live" />
-        </div>
-        <div class="tool">
-          <div class="tool_content">
-            <p class="tool_content_header">
-              CRM quản lý khách hàng
-            </p>
+          <div class="tool">
+            <div class="tool_content">
+              <p class="tool_content_header">
+                CRM quản lý khách hàng
+              </p>
+            </div>
+            <img loading="lazy" src="./assets/img/crm_customer_img.svg" class="full" alt="crm-customer" />
           </div>
-          <img src="./assets/img/crm_customer_img.svg" style="width: 100%" alt="crm-customer" />
         </div>
       </div>
     </div>
   </section>
-  <section style="width: 100%; margin-top: 70px">
-    <div style="
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        ">
+  <section class="section section_customer">
+    <div class="header_center">
       <p class="header_automatic">Khách hàng</p>
       <p class="text_desc header">Hơn 20.000+ doanh nghiệp đã tin dùng Subiz</p>
     </div>
     <div class="img_customer_row">
-      <div style="display: flex; justify-content: space-between">
-        <img src="./assets/img/logo_mywork.svg" class="customer" alt="logo-mywork" />
-        <img src="./assets/img/logo_vingroup.svg" class="customer" alt="logo-vingroup" />
-        <img src="./assets/img/logo_pnj.svg" class="customer" alt="logo-pnj" />
-        <img src="./assets/img/logo_fpt.svg" class="customer" alt="logo-fpt" />
+      <div class="d-flex">
+        <img loading="lazy" src="./assets/img/logo_mywork.svg" class="customer" alt="logo-mywork" />
+        <img loading="lazy" src="./assets/img/logo_vingroup.svg" class="customer" alt="logo-vingroup" />
+        <img loading="lazy" src="./assets/img/logo_pnj.svg" class="customer" alt="logo-pnj" />
+        <img loading="lazy" src="./assets/img/logo_fpt.svg" class="customer" alt="logo-fpt" />
       </div>
-      <div style="display: flex; justify-content: space-between">
-        <img src="./assets/img/logo_kidplaza.svg" class="customer" alt="logo-kidplaze" />
-        <img src="./assets/img/logo_mazda.svg" class="customer" alt="logo-mazda" />
-        <img src="./assets/img/logo_pico.svg" class="customer" alt="logo-pico" />
-        <img src="./assets/img/logo_ncb.svg" class="customer" alt="logo-ncb" />
+      <div class="d-flex">
+        <img loading="lazy" src="./assets/img/logo_kidplaza.svg" class="customer" alt="logo-kidplaze" />
+        <img loading="lazy" src="./assets/img/logo_mazda.svg" class="customer" alt="logo-mazda" />
+        <img loading="lazy" src="./assets/img/logo_pico.svg" class="customer" alt="logo-pico" />
+        <img loading="lazy" src="./assets/img/logo_ncb.svg" class="customer" alt="logo-ncb" />
       </div>
     </div>
     <div class="img_customer_column">
-      <div style="display: flex; justify-content: space-between; width: 100%;">
-        <img src="./assets/img/logo_mywork.svg" class="customer" style="width: 40%" alt="logo-mywork" />
-        <img src="./assets/img/logo_vingroup.svg" class="customer" style="width: 40%;" alt="logo-vingroup" />
+      <div class="d-flex">
+        <img loading="lazy" src="./assets/img/logo_mywork.svg" class="customer" alt="logo-mywork" />
+        <img loading="lazy" src="./assets/img/logo_vingroup.svg" class="customer" alt="logo-vingroup" />
       </div>
-      <div style="display: flex; justify-content: space-between">
-        <img src="./assets/img/logo_pnj.svg" class="customer" alt="logo-pnj" />
-        <img src="./assets/img/logo_fpt.svg" class="customer" alt="logo-fpt" />
+      <div class="d-flex">
+        <img loading="lazy" src="./assets/img/logo_pnj.svg" class="customer" alt="logo-pnj" />
+        <img loading="lazy" src="./assets/img/logo_fpt.svg" class="customer" alt="logo-fpt" />
       </div>
     </div>
   </section>
-  <section style="background: #f7faff">
+  <section class="section section_advise">
     <div class="advise_" style="position: relative">
-      <div class="half" style="
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-          ">
+      <div class="half header_center">
         <p class="text_register_advise">ĐĂNG KÝ TƯ VẤN</p>
         <p class="text_desc_advise">
           Vui lòng để lại thông tin để chúng tôi có thể tư vấn rõ hơn
         </p>
       </div>
-      <div style="display: flex; flex-direction: row" class="form_register half">
+      <div class="form_register half">
         <input placeholder="name@company.com" class="input_style" id="input" />
         <button class="input_button">
-          <a target="_blank" style="text-decoration: none" id="submit_btn">
+          <a target="_blank" id="submit_btn">
             <p class="text_button">Đăng ký</p>
           </a>
         </button>
       </div>
-      <img src="./assets/img/register_img.svg" class="register_img" alt="register-img" />
+      <img loading="lazy" src="./assets/img/register_img.svg" class="register_img" alt="register-img" />
     </div>
   </section>
   <footer class="footer_option">
@@ -776,7 +740,7 @@
           <a href="https://www.facebook.com/notes/subiz/th%C3%B4ng-b%C3%A1o-v%E1%BB%81-c%E1%BA%ADp-nh%E1%BA%ADt-t%C3%ADnh-n%C4%83ng-c%E1%BB%A7a-subiz-n%C4%83m-2020/2608424505952841/"
             class="footer_text">Cộng đồng Subiz</a>
         </div>
-        <div><img src="./assets/img/footer_logo.png" alt="logo-subiz" /></div>
+        <div><img loading="lazy" src="./assets/img/footer_logo.png" alt="logo-subiz" /></div>
       </div>
       <div style="
             flex: 2;
@@ -798,10 +762,10 @@
           </p>
           <div style="width: 100%; display: flex; flex-direction: row;">
             <a href="https://play.google.com/store/apps/details?id=com.subiz.mobile4&pli=1" target="_blank"
-              style="width: 50%;"><img src="./assets/img/google_play.png" style="margin-right: 20px"
+              style="width: 50%;"><img loading="lazy" src="./assets/img/google_play.png" style="margin-right: 20px"
                 alt="google-play" /></a>
 
-            <a href="https://apps.apple.com/vn/app/subiz/id1414797772" target="_blank" style="width: 50%;"><img
+            <a href="https://apps.apple.com/vn/app/subiz/id1414797772" target="_blank" style="width: 50%;"><img loading="lazy"
                 src="./assets/img/app_store.png" " alt=" app-store" /></a>
           </div>
         </div>
@@ -839,84 +803,84 @@
       </div>
     </div>
     <div class=" footer_2">
-      <div id="item_footer_1">
-        <p class="item_footer">
-          Công ty Cổ phần giải pháp trực tuyến Vietnambiz
-        </p>
-      </div>
-      <div class="more_footer inactive" id="more_footer_1">
-        <a href="https://subiz.com.vn/vi/" class="footer_text">Giới thiệu</a>
-        <a href="https://subiz.com.vn/vi/careers.html" class="footer_text">Tuyển dụng</a>
-        <!-- <a class="footer_text">Hóa đơn điện tử</a> -->
-        <a href="https://subiz.com.vn/vi/privacy-policy.html" class="footer_text">Chính sách bảo mật</a>
-        <a href="https://subiz.com.vn/vi/terms-of-service.html" class="footer_text">Điều khoản dịch vụ</a>
-      </div>
-      <div id="item_footer_2">
-        <p class="item_footer">Chức năng</p>
-      </div>
-      <div class="more_footer inactive" id="more_footer_2">
-        <a href="https://subiz.com.vn/vi/live-chat.html" class="footer_text">Subiz chat</a>
-        <a href="https://subiz.com.vn/vi/email.html" class="footer_text">Subiz Email</a>
-        <a href="https://subiz.com.vn/vi/facebook-messenger.html" class="footer_text">Facebook messenger</a>
-        <a href="https://subiz.com.vn/vi/pop-up/" class="footer_text">Chuyển đổi khách hàng</a>
-        <a href="https://subiz.com.vn/vi/tiep-thi-qua-live-chat/" class="footer_text">Subiz cho Marketing</a>
-        <a href="https://subiz.com.vn/vi/quan-ly-facebook-fanpage/" class="footer_text">Quản lý Fanpage</a>
-      </div>
-      <div id="item_footer_3">
-        <p class="item_footer">Sản phẩm</p>
-      </div>
-      <div class="more_footer inactive" id="more_footer_3">
-        <a href="https://subiz.com.vn/vi/feature.html" class="footer_text">Tính năng</a>
-        <a href="https://subiz.com.vn/vi/pricing.html" class="footer_text">Bảng giá</a>
-        <a href="https://www.facebook.com/notes/subiz/th%C3%B4ng-b%C3%A1o-v%E1%BB%81-c%E1%BA%ADp-nh%E1%BA%ADt-t%C3%ADnh-n%C4%83ng-c%E1%BB%A7a-subiz-n%C4%83m-2020/2608424505952841/"
-          class="footer_text">Cập nhật</a>
-        <a href="https://www.facebook.com/notes/subiz/th%C3%B4ng-b%C3%A1o-v%E1%BB%81-c%E1%BA%ADp-nh%E1%BA%ADt-t%C3%ADnh-n%C4%83ng-c%E1%BB%A7a-subiz-n%C4%83m-2020/2608424505952841/"
-          class="footer_text">Cộng đồng Subiz</a>
-      </div>
-      <div id="item_footer_4">
-        <p class="item_footer">Trợ giúp</p>
-      </div>
-      <div class="more_footer inactive" id="more_footer_4">
-        <a href="https://subiz.com.vn/vi/contact.html" class="footer_text">Subiz Support Team</a>
-        <a href="https://subiz.com.vn/vi/faqs.html" class="footer_text">FAQs</a>
-      </div>
-      <div id="item_footer_5">
-        <p class="item_footer">Subiz app mobile</p>
-      </div>
-      <div class="more_footer inactive" id="more_footer_5">
-        <a href="https://play.google.com/store/apps/details?id=com.subiz.mobile4&pli=1" target="_blank"><img
-            src="./assets/img/google_play.png" style="margin-right: 40px" alt="google-play" /></a>
+          <div id="item_footer_1">
+            <p class="item_footer">
+              Công ty Cổ phần giải pháp trực tuyến Vietnambiz
+            </p>
+          </div>
+          <div class="more_footer inactive" id="more_footer_1">
+            <a href="https://subiz.com.vn/vi/" class="footer_text">Giới thiệu</a>
+            <a href="https://subiz.com.vn/vi/careers.html" class="footer_text">Tuyển dụng</a>
+            <!-- <a class="footer_text">Hóa đơn điện tử</a> -->
+            <a href="https://subiz.com.vn/vi/privacy-policy.html" class="footer_text">Chính sách bảo mật</a>
+            <a href="https://subiz.com.vn/vi/terms-of-service.html" class="footer_text">Điều khoản dịch vụ</a>
+          </div>
+          <div id="item_footer_2">
+            <p class="item_footer">Chức năng</p>
+          </div>
+          <div class="more_footer inactive" id="more_footer_2">
+            <a href="https://subiz.com.vn/vi/live-chat.html" class="footer_text">Subiz chat</a>
+            <a href="https://subiz.com.vn/vi/email.html" class="footer_text">Subiz Email</a>
+            <a href="https://subiz.com.vn/vi/facebook-messenger.html" class="footer_text">Facebook messenger</a>
+            <a href="https://subiz.com.vn/vi/pop-up/" class="footer_text">Chuyển đổi khách hàng</a>
+            <a href="https://subiz.com.vn/vi/tiep-thi-qua-live-chat/" class="footer_text">Subiz cho Marketing</a>
+            <a href="https://subiz.com.vn/vi/quan-ly-facebook-fanpage/" class="footer_text">Quản lý Fanpage</a>
+          </div>
+          <div id="item_footer_3">
+            <p class="item_footer">Sản phẩm</p>
+          </div>
+          <div class="more_footer inactive" id="more_footer_3">
+            <a href="https://subiz.com.vn/vi/feature.html" class="footer_text">Tính năng</a>
+            <a href="https://subiz.com.vn/vi/pricing.html" class="footer_text">Bảng giá</a>
+            <a href="https://www.facebook.com/notes/subiz/th%C3%B4ng-b%C3%A1o-v%E1%BB%81-c%E1%BA%ADp-nh%E1%BA%ADt-t%C3%ADnh-n%C4%83ng-c%E1%BB%A7a-subiz-n%C4%83m-2020/2608424505952841/"
+              class="footer_text">Cập nhật</a>
+            <a href="https://www.facebook.com/notes/subiz/th%C3%B4ng-b%C3%A1o-v%E1%BB%81-c%E1%BA%ADp-nh%E1%BA%ADt-t%C3%ADnh-n%C4%83ng-c%E1%BB%A7a-subiz-n%C4%83m-2020/2608424505952841/"
+              class="footer_text">Cộng đồng Subiz</a>
+          </div>
+          <div id="item_footer_4">
+            <p class="item_footer">Trợ giúp</p>
+          </div>
+          <div class="more_footer inactive" id="more_footer_4">
+            <a href="https://subiz.com.vn/vi/contact.html" class="footer_text">Subiz Support Team</a>
+            <a href="https://subiz.com.vn/vi/faqs.html" class="footer_text">FAQs</a>
+          </div>
+          <div id="item_footer_5">
+            <p class="item_footer">Subiz app mobile</p>
+          </div>
+          <div class="more_footer inactive" id="more_footer_5">
+            <a href="https://play.google.com/store/apps/details?id=com.subiz.mobile4&pli=1" target="_blank"><img loading="lazy"
+                src="./assets/img/google_play.png" style="margin-right: 40px" alt="google-play" /></a>
 
-        <a href="https://apps.apple.com/vn/app/subiz/id1414797772" target="_blank"><img
-            src="./assets/img/app_store.png" alt="app-store" /></a>
-      </div>
-      <div id="item_footer_6">
-        <p class="item_footer">Liên hệ</p>
-      </div>
-      <div class="more_footer inactive" id="more_footer_6">
-        <p class="text_contact">
-          CÔNG TY CỔ PHẦN GIẢI PHÁP TRỰC TUYẾN VIETNAMBIZ (VIETNAMBIZ ONLINE
-          SOLUTIONS CORPORATION)
-        </p>
-        <p class="text_contact">
-          <span style="color: #ffffff">Trụ sở:</span> Tầng 6, tòa nhà Kailash,
-          ngõ 92 Trần Thái Tông, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội
-        </p>
-        <p class="text_contact">
-          Tổng đài chăm sóc khách hàng:
-          <span style="color: #f2724b">+84 2473.021.368</span>
-        </p>
-        <p class="text_contact">
-          Email: <span style="color: #0084cb">Support@subiz.com</span>
-        </p>
-        <p class="text_contact">
-          GPDKKD số 0102549247 do Sở Kế hoạch và Đầu tư thành phố Hà Nội cấp
-          ngày 26/11/2007
-        </p>
-      </div>
-    </div>
+            <a href="https://apps.apple.com/vn/app/subiz/id1414797772" target="_blank"><img loading="lazy"
+                src="./assets/img/app_store.png" alt="app-store" /></a>
+          </div>
+          <div id="item_footer_6">
+            <p class="item_footer">Liên hệ</p>
+          </div>
+          <div class="more_footer inactive" id="more_footer_6">
+            <p class="text_contact">
+              CÔNG TY CỔ PHẦN GIẢI PHÁP TRỰC TUYẾN VIETNAMBIZ (VIETNAMBIZ ONLINE
+              SOLUTIONS CORPORATION)
+            </p>
+            <p class="text_contact">
+              <span style="color: #ffffff">Trụ sở:</span> Tầng 6, tòa nhà Kailash,
+              ngõ 92 Trần Thái Tông, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội
+            </p>
+            <p class="text_contact">
+              Tổng đài chăm sóc khách hàng:
+              <span style="color: #f2724b">+84 2473.021.368</span>
+            </p>
+            <p class="text_contact">
+              Email: <span style="color: #0084cb">Support@subiz.com</span>
+            </p>
+            <p class="text_contact">
+              GPDKKD số 0102549247 do Sở Kế hoạch và Đầu tư thành phố Hà Nội cấp
+              ngày 26/11/2007
+            </p>
+          </div>
+        </div>
         <div class="footer_3">
-          <img src="./assets/img/logo_white.svg" alt="logo-subiz" />
+          <img loading="lazy" src="./assets/img/logo_white.svg" alt="logo-subiz" />
           <div style="
             font-style: normal;
             font-weight: 400;
@@ -936,17 +900,17 @@
           ">
             <a href="https://www.linkedin.com/company/subiz/?original_referer=https%3A%2F%2Fsubiz.com.vn%2F"
               target="_blank">
-              <img src="./assets/img/logo_facebook.png" style="cursor: pointer" alt="logo-facebook" />
+              <img loading="lazy" src="./assets/img/logo_facebook.png" style="cursor: pointer" alt="logo-facebook" />
             </a>
             <a href="https://twitter.com/subizdotcom" target="_blank">
-              <img src="./assets/img/logo_linkin.png" style="cursor: pointer" alt="logo-linkin" />
+              <img loading="lazy" src="./assets/img/logo_linkin.png" style="cursor: pointer" alt="logo-linkin" />
             </a>
             <a href="https://www.facebook.com/subizdotcom/" target="_blank">
-              <img src="./assets/img/logo_twitter.png" style="cursor: pointer" alt="logo-twitter" />
+              <img loading="lazy" src="./assets/img/logo_twitter.png" style="cursor: pointer" alt="logo-twitter" />
             </a>
           </div>
         </div>
-      </div>
+  </footer>
 </body>
 <script>
   var interative = document.getElementById("interative");
