@@ -6,7 +6,7 @@
 }
 
 .half {
-  width: 50%;
+  width: 45%;
 }
 
 #menu {
@@ -101,7 +101,6 @@ ul.dropdown_menu > li:hover > a {
 
 .text__menu {
   font-family: unset;
-  width: 145px !important;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -142,7 +141,7 @@ ul.dropdown_menu > li:hover > a {
 
   font-weight: bold;
   font-size: 48px;
-  line-height: 85px;
+  line-height: 58px;
   /* or 177% */
 
   text-transform: uppercase;
@@ -151,7 +150,7 @@ ul.dropdown_menu > li:hover > a {
 }
 
 .register_now_button {
-  width: 35%;
+  width: 45%;
   height: 69px;
 
   background: linear-gradient(94.63deg, #eeb625 4.13%, #fc5454 100%);
@@ -240,7 +239,7 @@ ul.dropdown_menu > li:hover > a {
   font-size: 25px;
   line-height: 36px;
   color: #6e6e73;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .img_customer_row > div > img {
@@ -610,7 +609,31 @@ ul.dropdown_menu > li:hover > a {
 }
 
 .tool {
+  height: 370px;
+  border: 1px solid #ababab;
+  border-radius: 7px;
   width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.tool_content {
+  height: 140px;
+  padding: 20px;
+}
+
+.tool_content_header {
+  font-weight: 700;
+  font-size: 19.208px;
+  line-height: 28px;
+}
+
+.tool_content_desc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .more_info {
@@ -629,6 +652,11 @@ ul.dropdown_menu > li:hover > a {
 }
 
 @media (max-width: 768px) {
+  .tool {
+    width: 45%;
+    height: 235px;
+  }
+
   .form_register {
     margin-right: 0;
   }
@@ -860,7 +888,7 @@ ul.dropdown_menu > li:hover > a {
   }
 
   .customer {
-    max-width: 160px;
+    max-width: 210px;
   }
 
   .advise_ {
@@ -1031,6 +1059,12 @@ ul.dropdown_menu > li:hover > a {
   }
 
   .more_info_tool {
+    display: none;
+  }
+}
+
+@media (max-width: 1900px) {
+  .solution_item {
     display: none;
   }
 }
